@@ -10,7 +10,12 @@
     <form id="form1" runat="server">
         <div>
             <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            <br />
+            <br />
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Delete cookies" />
         </div>
     </form>
+    <p>
+        &nbsp;</p>
 </body>
 </html>

@@ -11,10 +11,20 @@ namespace WebApplication
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(Request.Cookies["stud"]!=null)
+            if(Request.Cookies["Student"]!=null)
             {
-                string val= Request.Cookies["stud"].Value;
+                string val= Request.Cookies["Student"].Value;
                 Label1.Text = val;
+            }
+            
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            if (Request.Cookies["Student"] != null)
+            {
+                Response.Cookies["Student"].Expires = DateTime.Now.AddHours(-1);
+                Response.Redirect("WebForm10.aspx");
             }
         }
     }
