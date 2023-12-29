@@ -17,8 +17,10 @@
             <asp:RequiredFieldValidator  Display="None" ControlToValidate="txtPrefix" ID="RequiredFieldValidator1" runat="server" ErrorMessage="Enter Prefix"></asp:RequiredFieldValidator>
             <br />
             <br />
-            Name:<asp:TextBox ID="txtName" runat="server"></asp:TextBox>
-&nbsp;<asp:RequiredFieldValidator  Display="None" ControlToValidate="txtName" ID="RequiredFieldValidator2" runat="server" ErrorMessage="Enter name"></asp:RequiredFieldValidator>
+            Name:<asp:TextBox ID="txtfName" runat="server"></asp:TextBox>
+&nbsp;<asp:RequiredFieldValidator  Display="None" ControlToValidate="txtfName" ID="RequiredFieldValidator2" runat="server" ErrorMessage="Enter name"></asp:RequiredFieldValidator>
+            <asp:TextBox ID="txtlName" runat="server"></asp:TextBox>
+&nbsp;<asp:RequiredFieldValidator  Display="None" ControlToValidate="txtlName" ID="RequiredFieldValidator16" runat="server" ErrorMessage="Enter name"></asp:RequiredFieldValidator>
             <br />
             <br />
             Preferred Pronouns:
@@ -94,7 +96,7 @@
             <br />
             <br />
             <br />
-            <asp:Button ID="Button1" runat="server" Text="Button" />
+            <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
             <br />
             <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
 
