@@ -16,7 +16,11 @@ namespace WebApplication
                 string val= Request.Cookies["Student"].Value;
                 Label1.Text = val;
             }
-            
+            else
+            {
+                string val = "No cookies found...";
+                Label1.Text = val;
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -25,6 +29,11 @@ namespace WebApplication
             {
                 Response.Cookies["Student"].Expires = DateTime.Now.AddHours(-1);
                 Response.Redirect("WebForm10.aspx");
+            }
+            else
+            {
+                string val = "No cookies found...";
+                Label1.Text = val;
             }
         }
     }
